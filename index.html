@@ -14,65 +14,67 @@
       background: url('https://i.postimg.cc/G2SxPXMD/images-99.jpg') no-repeat center center fixed;
       background-size: cover;
       min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      backdrop-filter: brightness(0.7);
+      backdrop-filter: brightness(0.75);
     }
 
     .container {
       background: rgba(0,0,0,0.6);
-      padding: 25px;
+      padding: 20px;
       border-radius: 15px;
-      width: 90%;
-      max-width: 600px;
+      max-width: 95%;
     }
 
     h1 {
       font-family: 'Pacifico', cursive;
-      font-size: 2.8em;
+      font-size: 2.4em;
+      margin-bottom: 15px;
       color: #ffda79;
-      margin-bottom: 20px;
       text-shadow: 0 0 10px #ff5722, 0 0 20px #ff9100;
       animation: glow 2s infinite alternate;
     }
 
     @keyframes glow {
-      from { text-shadow: 0 0 15px #ffda79, 0 0 25px #ff5722; }
-      to { text-shadow: 0 0 25px #fff176, 0 0 35px #ff9100; }
+      from { text-shadow: 0 0 10px #ffda79, 0 0 20px #ff5722; }
+      to { text-shadow: 0 0 20px #fff176, 0 0 30px #ff9100; }
     }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin: 12px 0;
+    .wishes {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .wishes p {
+      margin: 8px 0;
     }
 
     .from {
-      margin-top: 25px;
+      margin-top: 12px;
       font-weight: bold;
-      font-size: 1.3em;
+      font-size: 1.1em;
       color: #ff80ab;
-      letter-spacing: 2px;
-      text-shadow: 0 0 12px #ff4081;
+      text-shadow: 0 0 10px #ff4081;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🎉 Happy Birthday <br> Munawir Ishfaq 🎂</h1>
+    <h1>🎉 Happy Birthday Munawir Ishfaq 🎂</h1>
 
-    <p>May your day be full of happiness, love, and blessings ✨</p>
-    <p>Wishing you endless success and true joy in life 🌸</p>
-    <p>Even miles apart, friendship keeps us close 💖</p>
-    <p>You’re more than a friend, you’re like family 🌍</p>
-    <p>Every candle on your cake brings new light to your journey 🕯️</p>
-    <p>Keep shining bright like the star you are 🌟</p>
-    <p>May health, peace, and fortune always follow your path 🍀</p>
-    <p>Happy Birthday once again, my amazing online friend 🥂</p>
+    <div class="wishes">
+      <p>May your day be full of happiness and blessings ✨</p>
+      <p>Wishing you endless success and true joy in life 🌸</p>
+      <p>Even miles apart, friendship keeps us close 💖</p>
+      <p>You’re more than a friend, you’re like family 🌍</p>
+      <p>Every candle on your cake brings light to your journey 🕯️</p>
+      <p>Keep shining bright like the star you are 🌟</p>
+      <p>May health, peace, and fortune always follow your path 🍀</p>
+      <p>Happy Birthday once again, my amazing online friend 🥂</p>
+    </div>
 
     <div class="from">— From Cyber Amna Rajpoot 👑</div>
   </div>
