@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Munawir Ishfaq</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://i.postimg.cc/G2SxPXMD/images-99.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 25px;
+      max-width: 90%;
+      margin: auto;
+      border-radius: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+      color: #ffda79;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffda79, 0 0 20px #ff8a65; }
+      to { text-shadow: 0 0 20px #fff176, 0 0 35px #ff5722; }
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 12px 0;
+      line-height: 1.6;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .from {
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 1.3em;
+      color: #ff80ab;
+      letter-spacing: 2px;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Floating Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #ff7eb3, #ff006e);
+      animation: float 10s infinite;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1);}
+      100% { transform: translateY(-120vh) scale(1.2);}
+    }
+
+    /* Confetti */
+    .confetti {
+      position: absolute;
+      width: 8px;
+      height: 14px;
+      background-color: gold;
+      animation: fall linear forwards;
+      z-index: 3;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10vh) rotate(0deg);}
+      100% { transform: translateY(110vh) rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>🎉 Happy Birthday Munawir Ishfaq 🎂</h1>
+
+    <p>May your day be filled with laughter, love, and unforgettable memories.</p>
+    <p>Wishing you success in everything you do and happiness that never ends.</p>
+    <p>Distance can’t stop friendship — today, my heart celebrates with you. 💖</p>
+    <p>You’re more than just a friend — you’re family in my online world. 🌍</p>
+    <p>May every candle on your cake bring endless light to your journey. 🕯️</p>
+    <p>Keep shining bright like the star you are. ✨</p>
+    <p>May joy, health, peace, and fortune always follow your path. 🌸</p>
+    <p>Happy Birthday once again, my amazing friend! 🥂</p>
+
+    <p class="from">— From Cyber Amna Rajpoot 👑</p>
+  </div>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 10%; animation-duration: 12s;"></div>
+  <div class="balloon" style="left: 30%; background: radial-gradient(circle, #79ffda, #00bcd4); animation-duration: 15s;"></div>
+  <div class="balloon" style="left: 60%; background: radial-gradient(circle, #ffd479, #ff9800); animation-duration: 18s;"></div>
+  <div class="balloon" style="left: 80%; background: radial-gradient(circle, #b379ff, #7b1fa2); animation-duration: 20s;"></div>
+
+  <!-- Confetti Script -->
+  <script>
+    function createConfetti() {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      document.body.appendChild(confetti);
+
+      const colors = ['#ff1744','#ff9100','#00e676','#2979ff','#fbc02d','#d500f9'];
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.left = Math.random() * window.innerWidth + 'px';
+      confetti.style.animationDuration = (3 + Math.random() * 5) + 's';
+
+      setTimeout(() => { confetti.remove(); }, 8000);
+    }
+
+    setInterval(createConfetti, 200);
+  </script>
+</body>
+</html>
